@@ -33,7 +33,7 @@ function showPopup(type){
   popup.style.display = "block";
 
   if(type === "yes"){
-    img.src = "teddy-heart.gif";
+    img.src = "teddy-gift.png";
   } else {
     img.src = "teddy-fight.gif";
 
