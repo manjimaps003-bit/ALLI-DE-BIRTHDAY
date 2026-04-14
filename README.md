@@ -23,7 +23,7 @@
 </audio>
 
 <!-- PHOTO SECTION -->
-<div id="photoSection">
+<div id="photoSection" style="display:none;">
   <h2>💗 Memories for you</h2>
   <img src="./photo1.jpeg">
   <img src="./photo2.jpeg">
