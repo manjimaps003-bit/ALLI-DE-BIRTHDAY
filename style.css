@@ -28,8 +28,8 @@ body{
 
 /* PHOTO SECTION */
 #photoSection{
-  text-align:center;
   display:none;
+  text-align:center;
   padding:10px;
 }
 
@@ -65,26 +65,31 @@ button{
 .question{display:none;}
 .active{display:block;}
 
+/* POPUP */
 .popup{
-  position:absolute;
+  position:fixed;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
   display:none;
+  z-index:9999;
 }
 
-.popup img{width:120px;}
-
-.message{display:none;}
-
-/* PETALS */
-.petal{
-  position:fixed;
-  top:-10px;
-  font-size:18px;
-  animation:fall linear infinite;
+.popup img{
+  width:150px;
+  animation:pop 0.4s ease;
 }
 
-@keyframes fall{
-  100%{transform:translateY(110vh) rotate(360deg);}
+@keyframes pop{
+  0%{transform:scale(0);}
+  100%{transform:scale(1);}
+}
+
+/* FINAL MESSAGE */
+.message{
+  display:none;
+  padding:20px;
+  color:#444;
+  font-size:15px;
+  line-height:1.6;
 }
