@@ -1,1 +1,83 @@
-# ALLI-DE-BIRTHDAY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <h2>💗 A small surprise is waiting for you...</h2>
+  <p>Made with love 🌸</p>
+  <button onclick="startExperience()">Start</button>
+</div>
+
+<!-- MUSIC -->
+<audio id="bgmusic" loop>
+  <source src="everlasting.mpeg" type="audio/mpeg">
+</audio>
+
+<!-- PHOTO SECTION -->
+<div id="photoSection">
+  <h2>💗 Memories for you</h2>
+
+  <img src="./photo1.jpeg">
+<img src="./photo2.jpeg">
+<img src="./photo3.jpeg">
+<img src="./photo4.jpeg">
+</div>
+
+<!-- MAIN -->
+<div class="container" id="main">
+
+  <div class="question active" id="q1">
+    <h2>Are you happy to go through this session?</h2>
+    <button class="yes" onclick="nextQ(1,true)">Yes</button>
+    <button class="no" onclick="nextQ(1,false)">No</button>
+  </div>
+
+  <div class="question" id="q2">
+    <h2>Am I much lovable?</h2>
+    <button class="yes" onclick="nextQ(2,true)">Yes</button>
+    <button class="no" onclick="nextQ(2,false)">No</button>
+  </div>
+
+  <div class="question" id="q3">
+    <h2>Do you think this birthday will be happier than the years?</h2>
+    <button class="yes" onclick="nextQ(3,true)">Yes</button>
+    <button class="no" onclick="nextQ(3,false)">No</button>
+  </div>
+
+  <div class="question" id="q4">
+    <h2>Do you think this will be a good surprise for you?</h2>
+    <button class="yes" onclick="finish(true)">Yes</button>
+    <button class="no" onclick="finish(false)">No</button>
+  </div>
+
+  <div class="popup" id="popup">
+    <img id="popupImg">
+  </div>
+
+  <div class="message" id="finalMsg">
+    <p>
+      Your answers already made me smile.<br><br>
+      This page is just a reminder of how special you are,<br>
+      how loved you are, and how grateful I am to have you.<br><br>
+
+      Many more happy returns of the day, Alliii ❤️<br><br>
+
+      I’ve been waiting for this day for a long time.<br>
+      Stay happy. I’ll always be there for you.
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
