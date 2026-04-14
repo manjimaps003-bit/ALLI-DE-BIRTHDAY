@@ -25,11 +25,10 @@
 <!-- PHOTO SECTION -->
 <div id="photoSection">
   <h2>💗 Memories for you</h2>
-
   <img src="./photo1.jpeg">
-<img src="./photo2.jpeg">
-<img src="./photo3.jpeg">
-<img src="./photo4.jpeg">
+  <img src="./photo2.jpeg">
+  <img src="./photo3.jpeg">
+  <img src="./photo4.jpeg">
 </div>
 
 <!-- MAIN -->
@@ -59,20 +58,22 @@
     <button class="no" onclick="finish(false)">No</button>
   </div>
 
+  <!-- POPUP -->
   <div class="popup" id="popup">
     <img id="popupImg">
   </div>
 
+  <!-- FINAL MESSAGE -->
   <div class="message" id="finalMsg">
     <p>
       Your answers already made me smile.<br><br>
-      This page is just a reminder of how special you are,<br>
+
+      This little page is just a reminder of how special you are,<br>
       how loved you are, and how grateful I am to have you.<br><br>
 
       Many more happy returns of the day, Alliii ❤️<br><br>
 
-      I’ve been waiting for this day for a long time.<br>
-      Stay happy. I’ll always be there for you.
+      Stay happy always. I’ll always be there for you 💗
     </p>
   </div>
 
